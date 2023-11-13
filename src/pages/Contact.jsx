@@ -1,14 +1,16 @@
 import { useRef, useState } from "react";
+import useAlert from "../hook/useAlert";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 
-import Fox from "../models/Fox";
 import { Loader } from "@react-three/drei";
+import Alert from "../components/Alert";
 
 const Contact = () => {
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);
+  const { alert, showAlert, hideAlert } = useAlert();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -32,14 +34,21 @@ const Contact = () => {
       )
       .then(() => {
         setIsLoading(false);
+
         // TODO: Show success message
+        showAlert({ text: "Message sent successfully", type: "success" });
+
         // TODO: Hide an alert
-        setForm({ name: "", email: "", message: "" });
+        setTimeout(() => {
+          setForm({ name: "", email: "", message: "" });
+          hideAlert();
+        }, 3000);
       })
       .catch((err) => {
         setIsLoading(false);
         console.error(err);
         // TODO: Show error message
+        showAlert({ text: "I didn't receive your message" });
       });
   };
 
@@ -47,8 +56,9 @@ const Contact = () => {
   const handleBlur = () => {};
 
   return (
-    <section className="relative flex flex-col lg:flex-row max-container">
-      <div className="flex-1 min-w-[50%] flex flex-col">
+    <section className="relative flex flex-col lg:flex-row max-container h-full">
+      {alert.show && <Alert {...alert} />}
+      <div className="flex-1 w-full max-w-sm mx-auto flex flex-col">
         <h1 className="head-text">Get in touch</h1>
         <form
           onSubmit={handleSubmit}
