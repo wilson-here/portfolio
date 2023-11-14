@@ -29,7 +29,13 @@ import {
   illustrator,
   xd,
   figma,
+  netflix,
+  shopease,
+  swiftshare,
+  pomodoro,
+  quotemachine,
 } from "../assets/icons";
+import { FiPhone, FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
 
 export const skills = [
   {
@@ -157,7 +163,7 @@ export const experiences = [
     company_name: "LinkedIn Learning",
     icon: linkedin,
     iconBg: "rgba(2,136,209,0.2)",
-    date: "Oct 2022 - Nov 2023",
+    date: "Oct 2022 - Nov 2022",
     points: [
       <>
         Earned LinkedIn Learning certificates in{" "}
@@ -248,61 +254,71 @@ export const experiences = [
 
 export const socialLinks = [
   {
-    name: "Contact",
-    iconUrl: contact,
-    link: "/contact",
-  },
-  {
     name: "GitHub",
-    iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    icon: <FiGithub className="w-full h-full text-[rgb(29, 34, 53)]" />,
+    link: "https://github.com/wilson-here",
   },
   {
     name: "LinkedIn",
-    iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
+    icon: <FiLinkedin className="w-full h-full text-[rgb(29, 34, 53)]" />,
+    link: "https://www.linkedin.com/in/quanganhha99/",
+  },
+  {
+    name: "Email",
+    icon: <FiMail className="w-full h-full text-[rgb(29, 34, 53)]" />,
+    link: "quanganhha99@gmail.com",
+  },
+  {
+    name: "Phone",
+    icon: <FiPhone className="w-full h-full text-[rgb(29, 34, 53)]" />,
+    link: "(+84) 91 951 7195",
   },
 ];
 
 export const projects = [
   {
-    iconUrl: pricewise,
-    theme: "btn-back-red",
+    iconUrl: netflix,
+    theme: "btn-back-netflix",
     name: "Netflix (clone)",
     description:
       "Leveraging React.js and Next.js, this project mirrors the iconic Netflix interface. Explore movies, enjoy seamless navigation, and experience a dynamic streaming environment.",
-    link: "https://github.com/wilson-here/netflix-clone",
+    live: "https://wilson-here-netflix-clone.vercel.app/",
+    github: "https://github.com/wilson-here/netflix-clone",
   },
   {
-    iconUrl: threads,
-    theme: "btn-back-green",
-    name: "Shop Ease",
-    description:
-      "An ecommerce site specializing in premium tech products such as headphones, speakers, and smartwatches, dedicated to delivering an elegant and refined shopping experience for customers.",
-    link: "https://github.com/wilson-here/shop-ease",
-  },
-  {
-    iconUrl: car,
-    theme: "btn-back-blue",
+    iconUrl: swiftshare,
+    theme: "btn-back-swiftshare",
     name: "Swift Share",
     description:
       "A social media web app where people can sign up, share their images, sort them into categories, and discover a wide variety of pictures shared by other users.",
-    link: "https://github.com/wilson-here/swift-share",
+    live: "https://wilson-here-swift-share.netlify.app/",
+    github: "https://github.com/wilson-here/swift-share",
   },
   {
-    iconUrl: snapgram,
-    theme: "btn-back-pink",
+    iconUrl: shopease,
+    theme: "btn-back-shopease",
+    name: "Shop Ease",
+    description:
+      "An ecommerce site specializing in premium tech products such as headphones, speakers, and smartwatches, dedicated to delivering an elegant and refined shopping experience for customers.",
+    live: "https://wilson-here-shop-ease.vercel.app/",
+    github: "https://github.com/wilson-here/shop-ease",
+  },
+  {
+    iconUrl: pomodoro,
+    theme: "btn-back-pomodoro",
     name: "Pomodoro",
     description:
       "A Pomodoro web app with customizable timers and background music player enabling users to boost productivity through effective time management",
-    link: "https://github.com/wilson-here/pomodoro",
+    live: "https://wilson-here-pomodoro.netlify.app/",
+    github: "https://github.com/wilson-here/pomodoro",
   },
   {
-    iconUrl: estate,
-    theme: "btn-back-black",
+    iconUrl: quotemachine,
+    theme: "btn-back-quotemachine",
     name: "Quote Machine",
     description:
-      "a quote machine web app, delivering daily inspiration with a click by displaying random quotes from a diverse collection of sources",
-    link: "https://github.com/adrianhajdin/quote-machine",
+      "A quote machine web app, delivering daily inspiration with a click by displaying random quotes from a diverse collection of sources",
+    live: "https://wilson-here-quote-machine.netlify.app/",
+    github: "https://github.com/wilson-here/quote-machine",
   },
 ];

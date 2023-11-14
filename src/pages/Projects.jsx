@@ -37,20 +37,33 @@ const Projects = () => {
                 {project.name}
               </h4>
               <p className="mt-2 text-slate-500">{project.description}</p>
-              <div className="mt-5 flex items-center gap-2 font-poppins">
+              <div className="flex gap-8 items-center mt-4">
                 <Link
-                  to={project.link}
+                  to={project.live}
                   target="_blank"
                   rel="noopener noreferer"
-                  className="font-semibold text-blue-600"
+                  className="font-semibold text-blue-600 inline-flex self-start gap-1 items-center font-poppins hover:cursor-pointer hover:opacity-80 transition"
                 >
-                  Live Link
+                  Live
+                  <img
+                    src={arrow}
+                    alt="arrow"
+                    className="w-4 h-4 object-contain"
+                  />
                 </Link>
-                <img
-                  src={arrow}
-                  alt="arrow"
-                  className="w-4 h-4 object-contain"
-                />
+                <Link
+                  to={project.github}
+                  target="_blank"
+                  rel="noopener noreferer"
+                  className="font-semibold text-blue-600 inline-flex self-start gap-1 items-center font-poppins hover:cursor-pointer hover:opacity-80 transition"
+                >
+                  Github
+                  <img
+                    src={arrow}
+                    alt="arrow"
+                    className="w-4 h-4 object-contain"
+                  />
+                </Link>
               </div>
             </div>
           </div>

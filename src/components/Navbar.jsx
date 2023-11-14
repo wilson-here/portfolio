@@ -5,7 +5,7 @@ const Navbar = () => {
     <header className="header">
       <NavLink
         to="/"
-        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
+        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md cursor-pointer transition hover:opacity-80"
       >
         <p className="blue-gradient_text uppercase">wh</p>
       </NavLink>
@@ -13,7 +13,9 @@ const Navbar = () => {
         <NavLink
           to="/projects"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive
+              ? "text-blue-500 hover:opacity-80 transition"
+              : "text-black hover:opacity-80 transition"
           }
         >
           Projects
@@ -21,7 +23,9 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-blue-500" : "text-black"
+            isActive
+              ? "text-blue-500 hover:opacity-80 transition"
+              : "text-black hover:opacity-80 transition"
           }
         >
           Contact

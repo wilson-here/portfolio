@@ -1,12 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import CTA from "../components/CTA";
+import { Link } from "react-router-dom";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { skills, experiences } from "../constants";
-import CTA from "../components/CTA";
+import { skills, experiences, socialLinks } from "../constants";
 
 const Home = () => {
   return (
@@ -19,25 +19,55 @@ const Home = () => {
       </h1>
       <div className="flex flex-col-reverse sm:flex-row justify-between gap-6 mt-6 items-center">
         <div className="flex flex-col gap-3 text-slate-500">
-          <p>
-            I am a Frontend Developer located in Vinh, Nghe An, Vietnam, with
-            expertise in crafting dynamic websites using React.js, Next.js and
-            CMS platforms such as WordPress and Sanity. Currently, I am
-            broadening my skills by delving into TypeScript.
+          <p className="text-justify">
+            I am a <b>Frontend Developer</b> located in{" "}
+            <b>Vinh, Nghe An, Vietnam</b>. My expertise lies in crafting dynamic
+            websites using React.js, Next.js, and CMS platforms such as
+            WordPress and Sanity. Currently, I am broadening my skills by
+            delving into TypeScript.
           </p>
         </div>
-        <div className="w-32 h-32 overflow-hidden rounded-full shrink-0">
-          <img
-            src="/src/assets/images/avatar.png"
-            alt="avatar"
-            className="rounded-full object-top object-cover w-36 h-36 "
-          />
+        <div>
+          <div className="w-32 h-32 overflow-hidden rounded-full shrink-0">
+            <img
+              src="/src/assets/images/avatar.png"
+              alt="avatar"
+              className="rounded-full object-top object-cover w-36 h-36 "
+            />
+          </div>
+          <div className="mt-3 flex items justify-center gap-4 text-[#1d2235]">
+            {socialLinks.map((socialLink) => (
+              <Link
+                key={`link ${socialLink.name}`}
+                to={
+                  socialLink.name === "Email"
+                    ? `mailto:${socialLink.link}`
+                    : socialLink.name === "Phone"
+                    ? `tel:${socialLink.link}`
+                    : socialLink.link
+                }
+                target={
+                  socialLink.name === "Email" || socialLink.name === "Phone"
+                    ? null
+                    : "_blank"
+                }
+                rel={
+                  socialLink.name === "Email" || socialLink.name === "Phone"
+                    ? null
+                    : "noopener noreferer"
+                }
+                className="w-5 h-5 inline-block transition hover:opacity-80"
+              >
+                {socialLink.icon}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
 
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My skills</h3>
-        <div className="mt-16 flex flex-wrap gap-12">
+        <div className="mt-16 flex flex-wrap gap-12 justify-center">
           {skills.map((skill) => (
             <div key={skill} className="block-container w-20 h-20">
               <div className="btn-back rounded-xl"></div>
@@ -84,7 +114,7 @@ const Home = () => {
                 }}
               >
                 <div>
-                  <h3 className="text-black text-xl font-poppins font-semibold">
+                  <h3 className="text-black text-lg sm:text-xl font-poppins font-semibold">
                     {exp.title}
                   </h3>
                   <p

@@ -36,6 +36,11 @@ import photoshop from "./photoshop.svg";
 import illustrator from "./illustrator.svg";
 import xd from "./xd.svg";
 import figma from "./figma.svg";
+import netflix from "./netflix.svg";
+import shopease from "./shopease.png";
+import swiftshare from "./swiftshare.svg";
+import pomodoro from "./pomodoro.png";
+import quotemachine from "./quotemachine.png";
 
 export {
   css,
@@ -76,4 +81,9 @@ export {
   illustrator,
   xd,
   figma,
+  netflix,
+  shopease,
+  swiftshare,
+  pomodoro,
+  quotemachine,
 };
