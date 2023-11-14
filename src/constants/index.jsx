@@ -255,22 +255,22 @@ export const experiences = [
 export const socialLinks = [
   {
     name: "GitHub",
-    icon: <FiGithub className="w-full h-full text-[rgb(29, 34, 53)]" />,
+    icon: <FiGithub className="w-full h-full" />,
     link: "https://github.com/wilson-here",
   },
   {
     name: "LinkedIn",
-    icon: <FiLinkedin className="w-full h-full text-[rgb(29, 34, 53)]" />,
+    icon: <FiLinkedin className="w-full h-full" />,
     link: "https://www.linkedin.com/in/quanganhha99/",
   },
   {
     name: "Email",
-    icon: <FiMail className="w-full h-full text-[rgb(29, 34, 53)]" />,
+    icon: <FiMail className="w-full h-full" />,
     link: "quanganhha99@gmail.com",
   },
   {
     name: "Phone",
-    icon: <FiPhone className="w-full h-full text-[rgb(29, 34, 53)]" />,
+    icon: <FiPhone className="w-full h-full" />,
     link: "(+84) 91 951 7195",
   },
 ];
