@@ -30,7 +30,7 @@ const Home = () => {
         <div>
           <div className="w-32 h-32 overflow-hidden rounded-full shrink-0">
             <img
-              src="/src/assets/images/avatar.png"
+              src="./src/assets/images/avatar.png"
               alt="avatar"
               className="rounded-full object-top object-cover w-36 h-36 "
             />
