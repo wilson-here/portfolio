@@ -146,7 +146,7 @@ export const experiences = [
     company_name: "Foreign Trade University",
     icon: ftu,
     iconBg: "rgba(192,32,37,0.2)",
-    date: "Aug 2017 - Dec 2021",
+    date: "Aug 2017 - May 2021",
     points: [
       "Leveraging an economics background to enhance frontend web development, brings analytical thinking, problem-solving, and business alignment to every project.",
     ],

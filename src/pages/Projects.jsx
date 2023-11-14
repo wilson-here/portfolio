@@ -1,12 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import CTA from "../components/CTA";
 import { projects } from "../constants";
 import { arrow } from "../assets/icons";
+import { useEffect } from "react";
 
 const Projects = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location.pathname]);
   return (
     <section className="max-container">
-      <h1 className="head-text">
+      <h1 className="head-text text-align">
         My{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Projects

@@ -11,6 +11,7 @@
 
 body {
   font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body:has(.card[data-color="blue"]:hover) {
@@ -47,7 +48,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .btn {
-    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center transition cursor-pointer;
+    @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center transition cursor-pointer;
   }
 
   .btn:hover {
@@ -55,7 +56,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+    @apply flex justify-between items-center sm:px-16 px-8 py-4 mx-auto fixed bg-[#f5f7f9] shadow-md top-0  z-10 right-0 left-0;
   }
 
   .footer {

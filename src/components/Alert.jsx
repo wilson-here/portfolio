@@ -2,17 +2,15 @@ import React from "react";
 
 const Alert = ({ type, text }) => {
   return (
-    <div className="absolute top-10 left-10 right-0 flex justify-center items-center">
+    <div className="absolute top-20 left-1/2 -translate-x-1/2 flex justify-center items-center z-50 max-w-[500px] w-full mx-auto">
       <div
         className={`${
-          type === "danger" ? "bg-red-800" : "bg-blue-800"
+          type === "danger" ? "bg-red-500" : "bg-green-500"
         } p-2 text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex items-center`}
         role="alert"
       >
         <p
-          className={`${
-            type === "danger" ? "bg-red-500" : "bg-blue-500"
-          } flex rounded-full uppercase px-2 py-1 font-semibold mr-3 text-xs`}
+          className={` flex rounded-full uppercase px-2 py-1 font-semibold mr-3 text-xs`}
         >
           {type === "danger" ? "Failed" : "Success"}
         </p>

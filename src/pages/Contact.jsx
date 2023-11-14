@@ -1,12 +1,21 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import useAlert from "../hook/useAlert";
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 
 import { Loader } from "@react-three/drei";
 import Alert from "../components/Alert";
+import { useLocation } from "react-router-dom";
 
 const Contact = () => {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location.pathname]);
+
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [isLoading, setIsLoading] = useState(false);

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import CTA from "../components/CTA";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -8,8 +8,14 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { skills, experiences, socialLinks } from "../constants";
 import { avatar } from "../assets/images";
+import { useEffect } from "react";
 
 const Home = () => {
+  const location = useLocation();
+  console.log(location);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <section className="max-container">
       <h1 className="head-text text-left w-full">
@@ -138,6 +144,24 @@ const Home = () => {
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
+        </div>
+      </div>
+      <div className="py-10 flex flex-col">
+        <h3 className="subhead-text">My projects</h3>
+        <div className="flex items-center justify-between gap-4">
+          <div className="mt-5 flex flex-col gap-3 text-slate-500">
+            <p>
+              In my developer journey, doing various projects have been
+              invaluable learning experiences. Each one contributes to my
+              ongoing growth in web development.
+              <br />
+              <br />
+              Click Projects to learn more
+            </p>
+          </div>
+          <Link to="/projects" className="btn max-w-[100px]">
+            Projects
+          </Link>
         </div>
       </div>
       <hr className="border-slate-200" />
