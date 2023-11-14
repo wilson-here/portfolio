@@ -9,7 +9,7 @@ const CTA = () => {
 
         <div className="mt-5 flex items-center  justify-between gap-4 text-slate-500">
           <p>Have a project in mind? Let's build something together!</p>
-          <Link to="/projects" className="btn border-r max-w-[100px]">
+          <Link to="/contact" className="btn border-r max-w-[100px]">
             Contact
           </Link>
         </div>
