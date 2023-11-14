@@ -7,6 +7,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { skills, experiences, socialLinks } from "../constants";
+import { avatar } from "../assets/images";
 
 const Home = () => {
   return (
@@ -30,7 +31,7 @@ const Home = () => {
         <div>
           <div className="w-32 h-32 overflow-hidden rounded-full shrink-0">
             <img
-              src="./src/assets/images/avatar.png"
+              src={avatar}
               alt="avatar"
               className="rounded-full object-top object-cover w-36 h-36 "
             />

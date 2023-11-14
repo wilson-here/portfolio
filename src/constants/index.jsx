@@ -1,9 +1,6 @@
 import { agl, fcc, ftu } from "../assets/images";
 import {
-  car,
-  contact,
   css,
-  estate,
   git,
   github,
   html,
@@ -11,13 +8,9 @@ import {
   linkedin,
   mongodb,
   nextjs,
-  pricewise,
   react,
   sass,
-  snapgram,
-  summiz,
   tailwindcss,
-  threads,
   typescript,
   wordpress,
   prisma,
