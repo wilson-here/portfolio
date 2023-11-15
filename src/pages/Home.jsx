@@ -12,7 +12,6 @@ import { useEffect } from "react";
 
 const Home = () => {
   const location = useLocation();
-  console.log(location);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
