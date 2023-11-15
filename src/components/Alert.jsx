@@ -2,7 +2,7 @@ import React from "react";
 
 const Alert = ({ type, text }) => {
   return (
-    <div className="absolute top-20 left-1/2 -translate-x-1/2 flex justify-center items-center z-50 max-w-[500px] w-full mx-auto">
+    <div className="fixed top-20 left-8 right-8 flex justify-center items-center z-50 max-w-[384px] mx-auto">
       <div
         className={`${
           type === "danger" ? "bg-red-500" : "bg-green-500"

@@ -147,7 +147,7 @@ const Home = () => {
       </div>
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My projects</h3>
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center  justify-between gap-4">
           <div className="mt-5 flex flex-col gap-3 text-slate-500">
             <p>
               In my developer journey, doing various projects have been

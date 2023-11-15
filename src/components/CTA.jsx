@@ -7,14 +7,14 @@ const CTA = () => {
       <div className="py-10">
         <h3 className="subhead-text">Contact me</h3>
 
-        <div className="mt-5 flex items-center  justify-between gap-4 text-slate-500">
+        <div className="mt-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-slate-500">
           <p>Have a project in mind? Let's build something together!</p>
-          <Link to="/contact" className="btn border-r max-w-[100px]">
+          <Link to="/contact" className=" btn max-w-[100px]">
             Contact
           </Link>
         </div>
         <div className="flex items-center justify-center gap-8 mt-8">
-          <div className="flex items-center justify-center gap-4 text-slate-500">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-slate-500">
             Or contact me via
             <div className="flex items justify-center gap-4 text-[#1d2235]">
               {socialLinks.map((socialLink) => (
