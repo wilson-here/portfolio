@@ -27,10 +27,12 @@ const Home = () => {
         <div className="flex flex-col gap-3 text-slate-500">
           <p className="text-justify">
             I am a <b>Frontend Developer</b> located in{" "}
-            <b>Vinh, Nghe An, Vietnam</b>. My expertise lies in crafting dynamic
-            websites using React.js, Next.js, and CMS platforms such as
-            WordPress and Sanity. Currently, I am broadening my skills by
-            delving into TypeScript.
+            <b>Vinh, Nghe An, Vietnam</b>. My expertise lies in website
+            development using{" "}
+            <b>
+              React.js, Next.js, Tailwind CSS, MongoDB, Wordpress and Sanity
+            </b>
+            . Currently, I'm in the process of learning TypeScript.
           </p>
         </div>
         <div>
