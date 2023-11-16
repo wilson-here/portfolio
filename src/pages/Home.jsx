@@ -157,7 +157,7 @@ const Home = () => {
               ongoing growth in web development.
               <br />
               <br />
-              Click Projects to learn more
+              Click Projects to learn more.
             </p>
           </div>
           <Link to="/projects" className="btn max-w-[100px]">
