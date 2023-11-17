@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <section className="max-container">
       <h1 className="head-text text-left w-full">
-        🐱‍💻 Hi there, I'm{" "}
+        👋 Hi there, I'm{" "}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Wilson
         </span>
@@ -26,13 +26,13 @@ const Home = () => {
       <div className="flex flex-col-reverse sm:flex-row justify-between gap-6 mt-6 items-center">
         <div className="flex flex-col gap-3 text-slate-500">
           <p className="text-justify">
-            I am a <b>Frontend Developer</b> located in{" "}
-            <b>Vinh, Nghe An, Vietnam</b>. My expertise lies in website
-            development using{" "}
+            I am a Frontend Developer based in <b>Vinh, Nghe An, Vietnam</b>,
+            specializing in crafting web experiences with{" "}
             <b>
-              React.js, Next.js, Tailwind CSS, MongoDB, Wordpress and Sanity
+              React.js, Next.js, Tailwind CSS, MongoDB, Wordpress, and Sanity
             </b>
-            . Currently, I'm in the process of learning TypeScript.
+            . Currently expanding my skills with TypeScript. I am actively
+            seeking new opportunities in React.js and Next.js development.
           </p>
         </div>
         <div>
