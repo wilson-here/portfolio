@@ -303,7 +303,7 @@ export const projects = [
     theme: "btn-back-shopease",
     name: "Shop Ease",
     description:
-      "An ecommerce web app with cart and payment feature (using Stripe payment gateway)..",
+      "An ecommerce web app with cart and payment feature (using Stripe payment gateway).",
     live: "https://wilson-here-shop-ease.vercel.app/",
     github: "https://github.com/wilson-here/shop-ease",
   },
