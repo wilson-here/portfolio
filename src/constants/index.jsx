@@ -285,7 +285,7 @@ export const projects = [
     theme: "btn-back-swiftshare",
     name: "Swift Share",
     description:
-      "A social media web app where people can sign up, share their images, sort them into categories, and discover a wide variety of pictures shared by other users.",
+      "A social media web app replicates the core features of Pinterest, including user authentication, homepage, category page, user profile and CRUD operations on pins (save, delete, add comment, browse similar pins).",
     live: "https://wilson-here-swift-share.netlify.app/",
     github: "https://github.com/wilson-here/swift-share",
   },
@@ -294,7 +294,7 @@ export const projects = [
     theme: "btn-back-netflix",
     name: "Netflix (clone)",
     description:
-      "Leveraging React.js and Next.js, this project mirrors the iconic Netflix interface. Explore movies, enjoy seamless navigation, and experience a dynamic streaming environment.",
+      "A movie streaming web app replicates the core features of Netflix, including user authentication, homepage, movie card and detailed movie page.",
     live: "https://wilson-here-netflix-clone.vercel.app/",
     github: "https://github.com/wilson-here/netflix-clone",
   },
@@ -303,7 +303,7 @@ export const projects = [
     theme: "btn-back-shopease",
     name: "Shop Ease",
     description:
-      "An ecommerce site specializing in premium tech products such as headphones, speakers, and smartwatches, dedicated to delivering an elegant and refined shopping experience for customers.",
+      "An ecommerce web app with cart and payment feature (using Stripe payment gateway)..",
     live: "https://wilson-here-shop-ease.vercel.app/",
     github: "https://github.com/wilson-here/shop-ease",
   },
@@ -312,7 +312,7 @@ export const projects = [
     theme: "btn-back-pomodoro",
     name: "Pomodoro",
     description:
-      "A Pomodoro web app with customizable timers and background music player enabling users to boost productivity through effective time management",
+      "A time management web app follows pomodoro technique with customizable timer and integrated Spotify music player.",
     live: "https://wilson-here-pomodoro.netlify.app/",
     github: "https://github.com/wilson-here/pomodoro",
   },
