@@ -167,6 +167,10 @@ body:has(.card[data-color="green"]:hover) {
   background: linear-gradient(135deg, #2e8b57 -20%, #2e8b5780 120%);
 }
 
+.block-container .btn-back-evernote {
+  background: linear-gradient(135deg, #7FCE2C -20%, #7FCE2C80 120%);
+}
+
 .block-container .btn-front {
   position: absolute;
   inset: 0;

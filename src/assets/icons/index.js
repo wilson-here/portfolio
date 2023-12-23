@@ -36,11 +36,13 @@ import photoshop from "./photoshop.svg";
 import illustrator from "./illustrator.svg";
 import xd from "./xd.svg";
 import figma from "./figma.svg";
+import postgresql from "./postgresql.svg";
 import netflix from "./netflix.svg";
 import shopease from "./shopease.png";
 import swiftshare from "./swiftshare.svg";
 import pomodoro from "./pomodoro.png";
 import quotemachine from "./quotemachine.png";
+import evernote from "./evernote.svg";
 
 export {
   css,
@@ -81,9 +83,11 @@ export {
   illustrator,
   xd,
   figma,
+  postgresql,
   netflix,
   shopease,
   swiftshare,
   pomodoro,
   quotemachine,
+  evernote,
 };

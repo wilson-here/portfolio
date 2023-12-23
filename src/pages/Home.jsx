@@ -26,13 +26,10 @@ const Home = () => {
       <div className="flex flex-col-reverse sm:flex-row justify-between gap-6 mt-6 items-center">
         <div className="flex flex-col gap-3 text-slate-500">
           <p className="text-justify">
-            I am a Frontend Developer based in <b>Vinh, Nghe An, Vietnam</b>. My
-            expertise lies in web development using{" "}
-            <b>
-              React.js, Next.js, Tailwind CSS, MongoDB, Wordpress, and Sanity
-            </b>
-            . Currently I am expanding my skills with TypeScript and actively
-            seeking new job opportunities.
+            I am based in Vinh, Nghe An, Vietnam. My focus is web development
+            using <b>React.js, Next.js, Tailwind CSS and Wordpress</b>.
+            Currently I am following a Full Stack Developer path and learning
+            Node.js.
           </p>
         </div>
         <div>

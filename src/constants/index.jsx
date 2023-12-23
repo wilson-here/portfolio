@@ -22,11 +22,14 @@ import {
   illustrator,
   xd,
   figma,
+  nodejs,
+  postgresql,
   netflix,
   shopease,
   swiftshare,
   pomodoro,
   quotemachine,
+  evernote,
 } from "../assets/icons";
 import { FiPhone, FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
 
@@ -55,6 +58,11 @@ export const skills = [
     imageUrl: typescript,
     name: "TypeScript",
     type: "Frontend",
+  },
+  {
+    imageUrl: nodejs,
+    name: "Node.js",
+    type: "Backend",
   },
   {
     imageUrl: php,
@@ -86,7 +94,6 @@ export const skills = [
     name: "Tailwind CSS",
     type: "Frontend",
   },
-
   {
     imageUrl: git,
     name: "Git",
@@ -97,10 +104,14 @@ export const skills = [
     name: "GitHub",
     type: "Version Control",
   },
-
   {
     imageUrl: mongodb,
     name: "MongoDB",
+    type: "Database",
+  },
+  {
+    imageUrl: postgresql,
+    name: "PostgreSQL",
     type: "Database",
   },
   {
@@ -270,15 +281,6 @@ export const socialLinks = [
 
 export const projects = [
   {
-    iconUrl: netflix,
-    theme: "btn-back-netflix",
-    name: "Netflix (clone)",
-    description:
-      "Leveraging React.js and Next.js, this project mirrors the iconic Netflix interface. Explore movies, enjoy seamless navigation, and experience a dynamic streaming environment.",
-    live: "https://wilson-here-netflix-clone.vercel.app/",
-    github: "https://github.com/wilson-here/netflix-clone",
-  },
-  {
     iconUrl: swiftshare,
     theme: "btn-back-swiftshare",
     name: "Swift Share",
@@ -286,6 +288,15 @@ export const projects = [
       "A social media web app where people can sign up, share their images, sort them into categories, and discover a wide variety of pictures shared by other users.",
     live: "https://wilson-here-swift-share.netlify.app/",
     github: "https://github.com/wilson-here/swift-share",
+  },
+  {
+    iconUrl: netflix,
+    theme: "btn-back-netflix",
+    name: "Netflix (clone)",
+    description:
+      "Leveraging React.js and Next.js, this project mirrors the iconic Netflix interface. Explore movies, enjoy seamless navigation, and experience a dynamic streaming environment.",
+    live: "https://wilson-here-netflix-clone.vercel.app/",
+    github: "https://github.com/wilson-here/netflix-clone",
   },
   {
     iconUrl: shopease,
@@ -306,12 +317,11 @@ export const projects = [
     github: "https://github.com/wilson-here/pomodoro",
   },
   {
-    iconUrl: quotemachine,
-    theme: "btn-back-quotemachine",
-    name: "Quote Machine",
-    description:
-      "A quote machine web app, delivering daily inspiration with a click by displaying random quotes from a diverse collection of sources",
-    live: "https://wilson-here-quote-machine.netlify.app/",
-    github: "https://github.com/wilson-here/quote-machine",
+    iconUrl: evernote,
+    theme: "btn-back-evernote",
+    name: "Evernote (clone)",
+    description: "A cloned landing page of a note-taking app named Evernote.",
+    live: "https://wilson-here.github.io/evernote-landing-page-clone/",
+    github: "https://github.com/wilson-here/evernote-landing-page-clone",
   },
 ];
